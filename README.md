@@ -18,6 +18,14 @@ REACT_APP_ACCUWEATHER_KEY=YOUR_API_KEY_HERE
 
 4. Run `npm run start`
 
+## Todo list improvements
+
+- [ ] Add loading interaction when button is clicked
+- [ ] Add animation when page loads
+- [ ] 3 day forecasts boxes clickable, in carousel
+- [ ] Use routing feature (react router)
+- [ ] Autopopulate top 50 locations (Accuweather request) when user clicks on the search box
+
 ## Dependencies
 
 ```json

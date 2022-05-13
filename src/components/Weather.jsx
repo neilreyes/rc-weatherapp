@@ -15,7 +15,6 @@ const Weather = ({ data }) => {
       <article className="weather-card">
         <div className="weather-card-wrap">
           <header className="text-center forecasts-header">
-            {console.log(data)}
             <h1 className="EnglishName">
               {EnglishName}
               <span className="your-location-label">Today</span>

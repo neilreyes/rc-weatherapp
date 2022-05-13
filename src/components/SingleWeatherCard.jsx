@@ -5,8 +5,6 @@ const SingleWeatherCard = ({ data }) => {
 
   return (
     <article className="col col-12 single-weather text-center">
-      {console.log(data)}
-
       <div className="single-weather-wrap text-center d-flex align-items-center flex-row p-3 justify-content-between">
         <img
           src={`https://developer.accuweather.com/sites/default/files/${

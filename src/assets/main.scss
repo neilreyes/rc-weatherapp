@@ -83,9 +83,10 @@ p{
 		max-width: 20%;
 	}
 }
+
 .search-btn{
-	margin-left: 1rem;
-	border-radius: 22px;
+	border-top-right-radius: 22px;
+	border-bottom-right-radius: 22px;
 	box-shadow: 0 0 10px 5px rgb(209 209 209 / 50%);
 	height: 55px;
 }
@@ -102,6 +103,8 @@ p{
 
 .form-control{
 	border-radius: 22px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 	box-shadow: 0 0 10px 5px rgb(140 180 185);
 	border: 0px none transparent;
 	height: 55px;

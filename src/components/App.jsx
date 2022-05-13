@@ -63,15 +63,15 @@ export default class App extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    this.setState({ isLoading: true });
     this.fetchLocation(this.state.searchKeyword);
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 1500);
   }
 
   handleChange(e) {
     this.setState({ searchKeyword: e.target.value });
-  }
-
-  componentDidCatch() {
-    this.fetchLocation("singapore");
   }
 
   render() {
@@ -86,24 +86,29 @@ export default class App extends Component {
             <Form
               onSubmit={(e) => this.handleSubmit(e)}
               className="d-flex search-form"
+              disabled={this.state.isLoading ? true : false}
             >
               <Form.Control
                 type="text"
-                placeholder={"Search Your Place"}
+                placeholder={"Type your place here..."}
                 value={this.state.searchKeyword}
                 onChange={(e) => this.handleChange(e)}
+                disabled={this.state.isLoading ? true : false}
               />
               <Button
                 onClick={(e) => this.handleSubmit(e)}
-                className="search-btn d-none"
+                className="search-btn"
+                disabled={this.state.isLoading ? true : false}
               >
-                Submit
+                {this.state.isLoading ? "Loading..." : "Search"}
               </Button>
             </Form>
           </Col>
         </Row>
 
-        <Weather data={this.state.selectedLocation} />
+        {!this.state.isLoading && (
+          <Weather data={this.state.selectedLocation} />
+        )}
       </Container>
     );
   }

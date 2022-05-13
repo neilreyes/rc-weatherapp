@@ -1,0 +1,201 @@
+
+::-webkit-scrollbar {
+	width: 12px;
+	/* for vertical scrollbars */
+	height: 12px;
+	/* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: #151638;
+	font-family: 'Montserrat', sans-serif;;
+}
+
+.app-container {
+	overflow-y: scroll;
+	overflow-x :hidden;
+	padding: 0;
+	width: 100%;
+    max-width: 415px;
+    max-height: 768px;
+	background: rgb(197, 239, 244);
+		background: -moz-linear-gradient(180deg, rgba(197, 239, 244, 1) 0%, rgba(154, 216, 222, 1) 14%, rgba(241, 241, 241, 1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(197, 239, 244, 1) 0%, rgba(154, 216, 222, 1) 14%, rgba(241, 241, 241, 1) 100%);
+		background: linear-gradient(180deg, rgba(197, 239, 244, 1) 0%, rgba(154, 216, 222, 1) 14%, rgba(241, 241, 241, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c5eff4", endColorstr="#f1f1f1", GradientType=1);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-row{
+	padding: 2.75rem 2rem;
+}
+
+.weather-card{
+	margin: 50px 0 0 0;
+	min-height: 100vh;
+	background: white;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+		
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 1rem;
+	color: #0f2e44;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #323232;
+}
+
+.single-weather-wrap {
+	border: 2px solid rgba(255,255,255,0.1);
+	background: rgb(255, 255, 255);
+		background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 25%, rgba(241, 241, 241, 1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 25%, rgba(241, 241, 241, 1) 100%);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 25%, rgba(241, 241, 241, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f1f1f1", GradientType=1);
+	border-radius: 10px;
+	box-shadow:0 0 10px 2px rgb(0 0 0 / 5%);
+	transition: all 0.3s ease-in-out;
+
+	.weatherDate{
+		width: 100%;
+	}
+
+	.weather-phrase{
+		width: 100%;
+	}
+
+	.weather-ico{
+		width: 100%;
+		max-width: 20%;
+	}
+}
+.search-btn{
+	margin-left: 1rem;
+	border-radius: 22px;
+	box-shadow: 0 0 10px 5px rgb(209 209 209 / 50%);
+	height: 55px;
+}
+
+.greetings{
+	font-size: 3rem;
+	line-height: 2.75rem;
+}
+
+.greeting-subheading{
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+
+.form-control{
+	border-radius: 22px;
+	box-shadow: 0 0 10px 5px rgb(140 180 185);
+	border: 0px none transparent;
+	height: 55px;
+	padding: 1rem 1.5rem;
+}
+
+.weather-card-wrap{
+	padding: 2rem 2rem;
+}
+
+.your-location-label{
+	font-size: 0.85rem;
+	display: block;
+	font-weight: 700;
+}
+
+.Headline{
+	font-size: 1rem;
+	border-top: 1px solid rgb(173 173 173 / 30%);
+	padding-top: 1rem;
+}
+
+.forecasts-header{
+	background: rgb(249, 254, 255);
+		background: -moz-linear-gradient(180deg, rgba(249, 254, 255, 1) 0%, rgba(226, 232, 233, 1) 59%);
+		background: -webkit-linear-gradient(180deg, rgba(249, 254, 255, 1) 0%, rgba(226, 232, 233, 1) 59%);
+		background: linear-gradient(180deg, rgba(249, 254, 255, 1) 0%, rgba(226, 232, 233, 1) 59%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9feff", endColorstr="#e2e8e9", GradientType=1);
+		border-radius: 22px;
+		padding: 2rem 2rem;
+		margin-top: -90px;
+
+}
+
+.weather{
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+
+.Subheadline{
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.weather-date-line1{
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.weather-date-line2{
+	padding-left: 0.5rem;
+	font-size: 1rem;
+}
+
+.weather-phrase{
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.weatherDate{
+	time{
+		font-size: 15px;
+	}
+}
+
+.forecasts-meta{
+	img{
+		width: 75px;
+	}
+
+	.weather-phrase{
+		width: 100%;
+	}
+}
+
+.forecasts-meta{
+	width: 80%;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+.single-weather{
+	margin-bottom: 1rem;
+	padding: 0 0.2rem;
+	transition: all 0.3s ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus{
+		transform: translate(0px,-5px);
+
+		.single-weather-wrap{
+			border: 2px solid #86b7fe;
+			box-shadow:0 16px 25px 1px rgb(0 0 0 / 15%);
+		}
+	}
+}

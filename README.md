@@ -1,2 +1,2 @@
-# rc-weatherapp
+# weatherapp
 Created with CodeSandbox
